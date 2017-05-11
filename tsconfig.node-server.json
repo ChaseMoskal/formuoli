@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./s/node-server",
+    "outDir": "./o/node-server",
+    "lib": ["es2017"],
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "./node_modules",
+    "./s/browser-client"
+  ]
+}

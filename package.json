@@ -1,0 +1,31 @@
+{
+  "name": "formuoli",
+  "version": "0.0.1",
+  "description": "simple form submission and collection",
+  "main": "o/node-server/index.js",
+  "scripts": {
+    "build": "rimraf o && run-p build-node-server build-browser-client",
+    "build-node-server": "tsc -p tsconfig.node-server.json",
+    "build-browser-client": "tsc -p tsconfig.browser-client.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChaseMoskal/formuoli"
+  },
+  "keywords": [],
+  "author": "Chase Moskal",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/tape": "^4.2.30",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "supertest": "^3.0.0",
+    "tape": "^4.6.3",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.0.35",
+    "express": "^4.15.2"
+  }
+}
